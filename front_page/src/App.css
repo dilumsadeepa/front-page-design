@@ -1,0 +1,251 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.closebtn {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.closebtn:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.hideham {
+    display: none;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.navbar-toggler[aria-expanded="true"] .hideham {
+    display: inline-block;
+}
+
+.navbar-toggler[aria-expanded="true"] .ham {
+    display: none;
+}
+
+.navbar {
+    background-color: #6B3CC9;
+    height: auto;
+    padding: 26px 80px;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+}
+
+.res-nav{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    
+}
+
+.res-nav .navbar-nav{
+    margin: 36px;
+}
+
+.res-nav a{
+    color: #100C08;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.res-nav svg{
+    color: #100C08;
+    float: right;
+}
+
+.hero-image {
+    height: 700px;
+    top: 77px;
+}
+
+.hero-text {
+    background-image: linear-gradient(to right, #4DCA79, #1CBDDD);
+    width: 630px;
+    padding: 24px 40px 32px 40px;
+    position: absolute;
+    top: 354px;
+    left: 80px;
+}
+
+.hero-text p {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.defbtn {
+    background-color: #F28D35;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 20px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.4;
+    color: #6B3CC9;
+}
+
+.service p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+.collapsible-textbox {
+    border-radius: 7px;
+    padding: 24px;
+    margin: 13px;
+    background-color: #FAF8FF;
+}
+
+.collapsible-head {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #6B3CC9;
+    cursor: pointer;
+}
+
+.collapsible-toggle-button {
+    float: right;
+    width: 14px;
+    height: 14px;
+}
+
+.collapsible-body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #6F6C90;
+}
+
+.footer-box{
+    background-color: #6B3CC9;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: white;
+}
+
+.f-dis{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.list p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+.footer-box h3{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25.41px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.privacy-box p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+
+@media (max-width: 850px) {
+    .navbar {
+        padding: 26px 20px;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 24px 40px 32px 40px;
+        position: sticky;
+        top: auto;
+        left: auto;
+    }
+
+    .hero-image {
+        height: 448px;
+        top: 77px;
+    }
+
+    .hero-text p {
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 448px) {
+    .navbar {
+        padding: 26px 20px;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 24px 20px 32px 20px;
+        position: sticky;
+        top: auto;
+        left: auto;
+    }
+
+    .hero-image {
+        height: 218px;
+        top: 77px;
+    }
+
+    .hero-text p {
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .service{
+        text-align: center;
+    }
+
+    .collapsible-head {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .collapsible-body {
+        font-size: 16px;
+    }
+}
